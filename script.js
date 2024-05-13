@@ -16,8 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function moveCircle(circle, angle, radius, centerX, centerY) {
-  const x = centerX + radius * Math.cos(angle * Math.PI / 180);
-  const y = centerY + radius * Math.sin(angle * Math.PI / 180);
+  const speed = 2; // Speed of rotation, adjust as needed
+  const time = Date.now() * speed;
+
+  const x = centerX + radius * Math.cos(time / 1000 + angle);
+  const y = centerY + radius * Math.sin(time / 1000 + angle);
 
   circle.style.left = x + "px";
   circle.style.top = y + "px";
