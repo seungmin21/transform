@@ -1,35 +1,19 @@
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-
-.circle {
-  width: 50px;
-  height: 50px;
+/* styles.css */
+#sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#circle1 {
-  background-color: #ff0000;
-}
-
-#circle2 {
-  background-color: #00ff00;
-}
-
-#circle3 {
-  background-color: #0000ff;
-}
-
-#circle4 {
-  background-color: #ffff00;
-}
-
-#circle5 {
-  background-color: #ff00ff;
+.planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: gray; /* 행성의 색상을 설정합니다 */
 }
